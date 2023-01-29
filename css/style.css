@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #242227;
+}
+
+.main-el {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+body,
+.main-el {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main-el:nth-child(1) {
+    min-height: 75px;
+}
+
+.main-el:nth-child(1) h1,
+.main-el:nth-child(1) button {
+    display: block;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background: blue;
+    border: 3px solid blue;
+    border-radius: 50px;
+    font-size: x-large;
+}
+
+
+#navbar {
+    background: #2a2a2a;
+    min-height: 55px;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+@media (max-width:400px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+#story {
+    min-height: 500px;
+}
+
+#story img {
+    display: block;
+    width: 50%;
+}
+
+#story div {
+    width: 40%;
+    height: 100%;
+}
+
+@media (max-width:700px) {
+    #story {
+        flex-direction: column;
+    }
+
+    #story div,
+    #story img {
+        width: 100%;
+    }
+}
+
+#cons {
+    min-height: 400px;
+    background: #2a2a2a;
+}
+
+@media (max-width:800px) {
+    #cons {
+        flex-direction: row;
+    }
+
+    #cons {
+        justify-content: center;
+    }
+}
+
+.cards {
+    width: 320px;
+    flex-basis: 320px;
+    min-height: 200px;
+    background: #242227;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+footer {
+    background: #242227;
+    min-height: 80px;
+}
+footer ul{
+    width: 100%;
+    min-height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    width: 15%;
+    height: 100%;
+}
+footer i{
+    width: 50px;
+    height: 50px;
+}
